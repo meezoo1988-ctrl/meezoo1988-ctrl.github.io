@@ -1,3 +1,4 @@
+'use strict';
 const menuButton = document.getElementById('menuButton');
 const mobileMenu = document.getElementById('mobileMenu');
 const mobileLayout = window.matchMedia('(max-width: 1150px)');
@@ -55,3 +56,13 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 window.addEventListener('resize', updateNavigation);
 updateNavigation();
+
+// Count completed working months, excluding gaps between documented roles.
+const experienceYears = document.getElementById('experienceYears');
+if (experienceYears) {
+  const now = new Date();
+  const currentMonth = now.getFullYear() * 12 + now.getMonth();
+  const priorMonths = (2017 * 12 + 7) - (2011 * 12 + 7) + 1;
+  const currentMonths = Math.max(0, currentMonth - (2018 * 12));
+  experienceYears.textContent = `${Math.floor((priorMonths + currentMonths) / 12)}+`;
+}

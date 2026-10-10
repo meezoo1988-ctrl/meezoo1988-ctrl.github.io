@@ -1,0 +1,327 @@
+{
+  "generated_at": "2026-10-10T15:12:14.363644+00:00",
+  "shadow_state": "MARKET_CLOSED",
+  "roles": [
+    {
+      "id": "data",
+      "name_ar": "مسؤول البيانات",
+      "authority": "reject invalid or incomplete history",
+      "skills": [
+        "OHLC validation",
+        "chronological alignment",
+        "dataset fingerprints"
+      ]
+    },
+    {
+      "id": "technical",
+      "name_ar": "المحلل الفني",
+      "authority": "propose, never execute",
+      "skills": [
+        "trend",
+        "momentum",
+        "RSI",
+        "breakout",
+        "regime"
+      ]
+    },
+    {
+      "id": "learning",
+      "name_ar": "باحث التعلم الآلي",
+      "authority": "experimental score only",
+      "skills": [
+        "logistic regression",
+        "train-only scaler",
+        "purged chronological folds"
+      ]
+    },
+    {
+      "id": "debate",
+      "name_ar": "مراجع فرص ومخاطر",
+      "authority": "record opposing price evidence",
+      "skills": [
+        "bull case",
+        "bear case",
+        "correlated-signal disclosure"
+      ]
+    },
+    {
+      "id": "risk",
+      "name_ar": "مدير المخاطر",
+      "authority": "veto new entries",
+      "skills": [
+        "position cap",
+        "gross exposure",
+        "drawdown latch",
+        "gap-aware stops"
+      ]
+    },
+    {
+      "id": "ceo",
+      "name_ar": "مدير المحفظة",
+      "authority": "approve paper proposals within risk limits",
+      "skills": [
+        "explicit rule policy",
+        "rank opportunities",
+        "reason audit"
+      ]
+    },
+    {
+      "id": "execution",
+      "name_ar": "منفذ التداول التجريبي",
+      "authority": "historical paper fills only",
+      "skills": [
+        "next-open orders",
+        "whole shares",
+        "adverse slippage",
+        "same-bar conservative fills"
+      ]
+    },
+    {
+      "id": "accounting",
+      "name_ar": "المحاسب ومدقق الأداء",
+      "authority": "measure, never promote",
+      "skills": [
+        "fees",
+        "equity reconciliation",
+        "net P&L",
+        "benchmark",
+        "cost stress"
+      ]
+    },
+    {
+      "id": "news",
+      "name_ar": "باحث الأخبار",
+      "authority": "read-only research",
+      "skills": [
+        "RSS provenance",
+        "Agent Reach source discovery"
+      ],
+      "status": "not used in this historical price model; no point-in-time news archive"
+    }
+  ],
+  "studies": [
+    {
+      "strategy": "consensus",
+      "net_return_pct": -1.1673,
+      "max_drawdown_pct": 2.4217,
+      "closed_trades": 25
+    },
+    {
+      "strategy": "rsi",
+      "net_return_pct": 6.0858,
+      "max_drawdown_pct": 1.5679,
+      "closed_trades": 64
+    },
+    {
+      "strategy": "breakout",
+      "net_return_pct": -1.0235,
+      "max_drawdown_pct": 2.9886,
+      "closed_trades": 66
+    },
+    {
+      "strategy": "ma50_200",
+      "net_return_pct": -2.1336,
+      "max_drawdown_pct": 5.0305,
+      "closed_trades": 147
+    },
+    {
+      "strategy": "regime",
+      "net_return_pct": -2.7126,
+      "max_drawdown_pct": 5.2054,
+      "closed_trades": 87
+    },
+    {
+      "strategy": "ml",
+      "net_return_pct": -3.8777,
+      "max_drawdown_pct": 5.4715,
+      "closed_trades": 51
+    },
+    {
+      "strategy": "team",
+      "net_return_pct": -1.3883,
+      "max_drawdown_pct": 2.2783,
+      "closed_trades": 27
+    },
+    {
+      "strategy": "director",
+      "net_return_pct": 6.0858,
+      "max_drawdown_pct": 1.5679,
+      "closed_trades": 64
+    },
+    {
+      "strategy": "benchmark",
+      "net_return_pct": 21.0947,
+      "max_drawdown_pct": 9.686,
+      "closed_trades": 5
+    }
+  ],
+  "review": {
+    "generated_at": "2026-10-10T15:12:14.363644+00:00",
+    "session_date": "2026-10-09",
+    "mode": "POST_SESSION_RESEARCH",
+    "coverage": {
+      "type": "broad-market and sector ETF proxy survey",
+      "requested": 15,
+      "received": 15,
+      "entire_us_market": false,
+      "failures": {}
+    },
+    "market": {
+      "changes": [
+        {
+          "symbol": "XLRE",
+          "change_pct": 1.86,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "XLV",
+          "change_pct": 1.576,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "XLY",
+          "change_pct": 1.02,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "XLF",
+          "change_pct": 0.922,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "DIA",
+          "change_pct": 0.872,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "XLU",
+          "change_pct": 0.828,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "SPY",
+          "change_pct": 0.6,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "XLK",
+          "change_pct": 0.506,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "XLI",
+          "change_pct": 0.505,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "IWM",
+          "change_pct": 0.494,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "QQQ",
+          "change_pct": 0.494,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "XLB",
+          "change_pct": 0.325,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "XLP",
+          "change_pct": 0.012,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "XLE",
+          "change_pct": -0.245,
+          "date": "2026-10-09"
+        },
+        {
+          "symbol": "XLC",
+          "change_pct": -1.508,
+          "date": "2026-10-09"
+        }
+      ],
+      "advancers": 13,
+      "decliners": 2
+    },
+    "findings": [
+      {
+        "id": "benchmark_gap",
+        "value": -15.0089,
+        "meaning": "Historical return gap in percentage points; not today P&L"
+      },
+      {
+        "id": "risk_comparison",
+        "value": {
+          "director": 1.5679,
+          "benchmark": 9.686
+        }
+      },
+      {
+        "id": "cost_sensitivity",
+        "value": 1.5301
+      },
+      {
+        "id": "forward_status",
+        "value": {
+          "state": "MARKET_CLOSED",
+          "processed": 0,
+          "fresh_price_execution": false,
+          "next_step": "Wait for NYSE session; historical execution is a separate test"
+        }
+      },
+      {
+        "id": "execution_mismatch",
+        "value": "Historical 10% equity next-open/intrabar stops vs shadow 5% remaining cash sampled-price stops"
+      }
+    ],
+    "experiments": [
+      {
+        "id": "execution_parity",
+        "status": "QUEUED",
+        "goal": "Use identical risk sizing and timing before comparing historical and forward evidence"
+      },
+      {
+        "id": "untouched_forward",
+        "status": "COLLECTING",
+        "goal": "Measure future paper sessions without selecting from their results"
+      },
+      {
+        "id": "cost_robustness",
+        "status": "EVALUATED_RESEARCH",
+        "goal": "Track fee/spread stress alongside baseline"
+      },
+      {
+        "id": "diverse_universe",
+        "status": "QUEUED",
+        "goal": "Evaluate a new universe and corporate-action handling before promotion"
+      }
+    ],
+    "attribution": {
+      "causal_news_explanation": false,
+      "daily_bot_pnl_available": false,
+      "note": "Historical diagnostics and current saved portfolio status; no fabricated daily trade attribution"
+    },
+    "promotion": {
+      "approved": false,
+      "automatic_code_changes": false,
+      "live_authority": false
+    },
+    "ai_council": {
+      "status": "NOT_CONFIGURED",
+      "reviews": [],
+      "order_authority": false
+    }
+  },
+  "promotion": {
+    "candidate": "director",
+    "approved": false,
+    "reasons": [
+      "DOES_NOT_BEAT_50_PERCENT_EXPOSURE_BASKET",
+      "FORWARD_SHADOW_EVIDENCE_PENDING"
+    ]
+  }
+}

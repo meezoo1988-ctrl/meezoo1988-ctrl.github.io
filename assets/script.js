@@ -25,14 +25,14 @@ const year = document.getElementById('year');
 if (year) year.textContent = new Date().getFullYear();
 const themeToggle = document.getElementById('themeToggle');
 function setTheme(light) {
-  document.body.classList.toggle('warm-mode', light);
+  document.documentElement.classList.toggle('warm-mode', light);
   themeToggle?.setAttribute('aria-pressed', String(light));
   themeToggle?.setAttribute('aria-label', light ? 'تفعيل المظهر الداكن' : 'تفعيل المظهر الفاتح');
   document.querySelector('meta[name="theme-color"]')?.setAttribute('content', light ? '#f7f3ec' : '#10100e');
 }
 try { setTheme(localStorage.getItem('mazen-theme') === 'light'); } catch { setTheme(false); }
 themeToggle?.addEventListener('click', () => {
-  const light = !document.body.classList.contains('warm-mode');
+  const light = !document.documentElement.classList.contains('warm-mode');
   setTheme(light);
   try { localStorage.setItem('mazen-theme', light ? 'light' : 'dark'); } catch {}
 });

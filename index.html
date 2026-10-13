@@ -2,11 +2,12 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; manifest-src 'none'; worker-src 'none'; require-trusted-types-for 'script'; trusted-types 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="الموقع الشخصي لمازن حمدان - IT Support Specialist في جدة، المملكة العربية السعودية." />
-  <meta name="theme-color" content="#0a0f12" />
+  <meta name="theme-color" content="#10100e" />
+  <script src="assets/boot.js"></script>
   <title>Mazen Hamdan | IT Support Specialist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +54,7 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-backdrop"></div>
       <div class="wide hero-layout">
-        <div class="hero-copy reveal">
+        <div class="hero-copy">
           <div class="hello"><span>✦</span> مرحباً، أنا</div>
           <h1 id="hero-title"><span>مازن</span> حمدان</h1>
           <div class="name-en">Mazen Hamdan</div>
@@ -82,10 +83,10 @@
       </div>
 
       <div class="wide stats-bar glass reveal delay-2">
-        <div class="stat-item"><span class="stat-icon">▣</span><div><strong id="experienceYears">14+</strong><small>سنوات خبرة</small></div></div>
-        <div class="stat-item"><span class="stat-icon">▱</span><div><strong>100+</strong><small>جهاز مدعوم</small></div></div>
-        <div class="stat-item"><span class="stat-icon">♟</span><div><strong>مستخدمون</strong><small>مستفيدون</small></div></div>
-        <div class="stat-item"><span class="stat-icon">▤</span><div><strong>بيئات عمل</strong><small>متنوعة</small></div></div>
+        <div class="stat-item"><span class="stat-icon">▣</span><div><strong id="experienceYears" data-count>14+</strong><small>سنوات خبرة</small></div></div>
+        <div class="stat-item"><span class="stat-icon">▱</span><div><strong data-count>100+</strong><small>جهاز مدعوم</small></div></div>
+        <div class="stat-item"><span class="stat-icon">♟</span><div><strong data-count>3</strong><small>جهات عمل</small></div></div>
+        <div class="stat-item"><span class="stat-icon">◆</span><div><strong>B.Sc. IT</strong><small>جامعة الملك عبدالعزيز</small></div></div>
       </div>
     </section>
 
@@ -114,6 +115,11 @@
               <a class="mini-btn" href="cv.html">المزيد عني <span>←</span></a>
             </div>
           </div>
+          <ul class="quick-facts">
+            <li><span>⌖</span><div><small>الموقع</small><strong>جدة، المملكة العربية السعودية</strong></div></li>
+            <li><span>◆</span><div><small>التعليم</small><strong>بكالوريوس تقنية المعلومات — جامعة الملك عبدالعزيز</strong></div></li>
+            <li><span>✦</span><div><small>اللغات</small><strong>العربية (الأم) · الإنجليزية (جيد)</strong></div></li>
+          </ul>
           <div class="value-chips"><span>العمل الجماعي</span><span>حل المشكلات</span><span>التطوير المستمر</span></div>
         </article>
 
@@ -154,11 +160,11 @@
 
     <section class="projects section-gap" id="projects">
       <div class="wide">
-        <div class="section-heading-row"><div><span class="section-kicker">أبرز المشاريع</span><h2>أعمال تقنية من بيئة العمل الفعلية</h2></div><a href="#projects">تصفح المشاريع ↓</a></div>
+        <div class="section-heading-row"><div><span class="section-kicker">أبرز المشاريع</span><h2>أعمال تقنية من بيئة العمل الفعلية</h2></div><a href="https://github.com/meezoo1988-ctrl" target="_blank" rel="noopener noreferrer">المزيد على GitHub ↗</a></div>
         <div class="project-grid">
-          <article class="project-card reveal"><div class="project-visual windows-bg"><span>01</span></div><div class="project-copy"><small>Windows Deployment</small><h3>ترقية أجهزة الشركة إلى Windows 11</h3><p>المساهمة في ترقية مجموعة كبيرة من أجهزة المستخدمين وتحسين آلية النشر لتقليل التدخل اليدوي.</p><div><span>Windows 11</span><span>PDQ Deploy</span></div></div></article>
-          <article class="project-card reveal delay-1"><div class="project-visual network-bg"><span>02</span></div><div class="project-copy"><small>Multi-site Support</small><h3>دعم الفروع والإدارات</h3><p>دعم مواقع متعددة وحل مشكلات الأجهزة والشبكات والطباعة مع المحافظة على استمرارية العمل.</p><div><span>Branch Support</span><span>Networking</span></div></div></article>
-          <article class="project-card reveal delay-2"><div class="project-visual printer-bg"><span>03</span></div><div class="project-copy"><small>Troubleshooting</small><h3>حل مشاكل الطباعة والشبكات</h3><p>تشخيص أعطال Canon والطباعة السحابية ومشكلات الشبكة وخدمات UniFLOW بطريقة منظمة.</p><div><span>Canon</span><span>UniFLOW</span></div></div></article>
+          <article class="project-card reveal"><div class="project-visual windows-bg"><svg class="pv-icon pv-windows" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><rect class="pv-tile" x="18" y="18" width="40" height="40" rx="5"/><rect class="pv-tile" x="62" y="18" width="40" height="40" rx="5"/><rect class="pv-tile" x="18" y="62" width="40" height="40" rx="5"/><rect class="pv-tile" x="62" y="62" width="40" height="40" rx="5"/></svg><span>01</span></div><div class="project-copy"><small>Windows Deployment</small><h3>ترقية أجهزة الشركة إلى Windows 11</h3><p>المساهمة في ترقية مجموعة كبيرة من أجهزة المستخدمين وتحسين آلية النشر لتقليل التدخل اليدوي.</p><div><span>Windows 11</span><span>PDQ Deploy</span></div></div></article>
+          <article class="project-card reveal delay-1"><div class="project-visual network-bg"><svg class="pv-icon pv-network" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path class="pv-link" d="M60 60 L24 30 M60 60 L98 28 M60 60 L22 92 M60 60 L96 94 M24 30 L98 28 M22 92 L96 94"/><circle class="pv-node pv-hub" cx="60" cy="60" r="10"/><circle class="pv-node" cx="24" cy="30" r="6"/><circle class="pv-node" cx="98" cy="28" r="6"/><circle class="pv-node" cx="22" cy="92" r="6"/><circle class="pv-node" cx="96" cy="94" r="6"/></svg><span>02</span></div><div class="project-copy"><small>Multi-site Support</small><h3>دعم الفروع والإدارات</h3><p>دعم مواقع متعددة وحل مشكلات الأجهزة والشبكات والطباعة مع المحافظة على استمرارية العمل.</p><div><span>Branch Support</span><span>Networking</span></div></div></article>
+          <article class="project-card reveal delay-2"><div class="project-visual printer-bg"><svg class="pv-icon pv-printer" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><rect class="pv-paper" x="38" y="16" width="44" height="30" rx="3"/><rect class="pv-body" x="18" y="44" width="84" height="40" rx="8"/><circle class="pv-led" cx="88" cy="58" r="4"/><g class="pv-out"><rect class="pv-paper" x="34" y="74" width="52" height="34" rx="3"/><path class="pv-lines" d="M42 86 H78 M42 94 H70 M42 102 H74"/></g></svg><span>03</span></div><div class="project-copy"><small>Troubleshooting</small><h3>حل مشاكل الطباعة والشبكات</h3><p>تشخيص أعطال Canon والطباعة السحابية ومشكلات الشبكة وخدمات UniFLOW بطريقة منظمة.</p><div><span>Canon</span><span>UniFLOW</span></div></div></article>
         </div>
       </div>
     </section>
@@ -190,5 +196,6 @@
   <footer class="footer"><div class="wide"><div class="brand"><span class="brand-signature">MH</span><span class="brand-text"><strong>Mazen Hamdan</strong><small>IT Support Specialist</small></span></div><p>© <span id="year"></span> Mazen Hamdan. All rights reserved.</p></div></footer>
 
   <script src="assets/script.js" defer></script>
+  <script src="assets/motion.js" defer></script>
 </body>
 </html>

@@ -4,3 +4,18 @@
 @page{size:A4;margin:5mm}@media print{body{background:#fff}.toolbar{display:none}.page{width:100%;margin:0;box-shadow:none;border-radius:0}.header{padding:15px 22px;grid-template-columns:92px 1fr;gap:18px}.header img{width:78px;height:78px}.name h1{font-size:27px}.name .role{font-size:10px}.contactline{margin-top:8px;font-size:8.5px}.body{padding:14px 22px 16px;gap:18px}.section{margin-bottom:12px}.section h2{font-size:13px;margin-bottom:8px;padding-bottom:5px}.objective{font-size:9px;line-height:1.55}.job{margin-bottom:10px}.job h3{font-size:11px}.job h4{font-size:9px;margin:3px 0 4px}.job .date{font-size:8px}.job ul{font-size:8.5px;line-height:1.42}.edu{margin-bottom:9px}.edu h3{font-size:10.5px}.edu p{font-size:8.5px}.aside-card{padding:10px;margin-bottom:9px}.tag{font-size:7.5px;padding:4px 6px}.language{padding:5px 0;font-size:8.5px}.note{font-size:7.5px;margin-top:8px}.skill-list{font-size:8.5px;line-height:1.5}.training{gap:4px}.training div{padding-bottom:4px}.training b{font-size:8.5px}.training span{font-size:7.5px}.print-footer{padding:5px 22px;font-size:7px}}
 @media print{.body{grid-template-columns:1.65fr .9fr}.header{text-align:left}.header img{margin:0}.contactline{justify-content:flex-start}.job-head{display:flex}.toolbar{display:none}*{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
 @media screen and (max-width:380px){.name h1{font-size:28px}.toolbar{flex-wrap:wrap}.header,.body{padding-inline:18px}.contactline{overflow-wrap:anywhere}}
+
+/* v2: gentle entrance on screen only */
+.framed body{display:none!important}
+@media screen and (prefers-reduced-motion:no-preference){
+  .page{animation:cvRise .7s cubic-bezier(.2,.7,.2,1) both}
+  .header img{animation:cvPop .8s cubic-bezier(.2,.7,.2,1) .2s both}
+  .section,.job{animation:cvRise .7s cubic-bezier(.2,.7,.2,1) both}
+  .body>div .section:nth-child(2),.aside-card:nth-child(2){animation-delay:.12s}
+  .body>div .section:nth-child(3),.aside-card:nth-child(3){animation-delay:.24s}
+  .aside-card:nth-child(4){animation-delay:.36s}
+  .toolbar a,.toolbar button{transition:transform .2s,filter .2s}.toolbar a:hover,.toolbar button:hover{transform:translateY(-2px);filter:brightness(1.1)}
+  .tag{transition:transform .2s}.tag:hover{transform:translateY(-2px)}
+}
+@keyframes cvRise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes cvPop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}

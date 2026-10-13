@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meezoo1988-ctrl.github.io/sitemap.xml
